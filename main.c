@@ -2,13 +2,13 @@
 
 static void	show_options()
 {
-	puts(BYEL"> Choose an option:\n"DFLT
-		"\t(1) Show all persons informations\n"
-		"\t(2) Show person informations\n"
-		"\t(3) Register a new person\n"
-		"\t(4) Update a person informations\n"
-		"\t(5) Delete a person record\n"
-		"\t(0) Quit"
+	puts(BYEL"Choose an option:\n"BWHT
+		"  (1) Show all persons informations\n"
+		"  (2) Show person informations\n"
+		"  (3) Register a new person\n"
+		"  (4) Update a person informations\n"
+		"  (5) Delete a person record\n"
+		"  (0) Quit\n"DFLT
 		);
 }
 
@@ -28,7 +28,7 @@ int	main()
 			quit = 1;
 			break;
 		case 1:
-			sho
+			show_persons_table();
 			break;
 		case 2:
 			break;
@@ -43,8 +43,8 @@ int	main()
 			break;
 		}
 
+		printf();
 	} while (!quit);
-	
 
 	return 0;
 }

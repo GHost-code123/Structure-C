@@ -38,5 +38,7 @@ void			add_person(const char *name, int age, struct Address address);
 void			show_person_infos(struct Person *person, int num);
 void			delete_person(int person_num);
 
+void			show_persons_table();
+
 #endif
 

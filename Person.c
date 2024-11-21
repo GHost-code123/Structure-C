@@ -56,5 +56,5 @@ void	delete_person(int person_num)
 
 void	show_persons_table()
 {
-	printf("+----------");
+	puts("+---+--------------------+---+----------------------------------------+");
 }
