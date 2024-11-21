@@ -2,7 +2,7 @@
 
 static void	show_options()
 {
-	puts(BYEL"Choose an option:\n"BWHT
+	puts(BYEL"\nChoose an option:\n"BWHT
 		"  (1) Show all persons informations\n"
 		"  (2) Show person informations\n"
 		"  (3) Register a new person\n"
@@ -31,19 +31,24 @@ int	main()
 			show_persons_table();
 			break;
 		case 2:
+			show_person_infos();
 			break;
 		case 3:
+			add_person();
 			break;
 		case 4:
+			// update_person_infos();
 			break;
 		case 5:
+			delete_person();
 			break;
 		default:
 			puts(BRED"Invalid option"DFLT);
 			break;
 		}
 
-		printf();
+		// printf("   Press Enter to show Menu\n");
+		// scanf(" ");
 	} while (!quit);
 
 	return 0;

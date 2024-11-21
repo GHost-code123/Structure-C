@@ -20,23 +20,22 @@
 
 struct Address
 {
-	const char	*street;
-	const char	*city;
-	short		zip;
+	char	street[51];
+	char	city[21];
+	int		zip;
 };
 
 struct Person
 {
-	const char		*name;
+	char			name[21];
 	int				age;
 	struct Address	address;
 };
 
 
-struct Person	create_person(const char *name, int age, struct Address address);
-void			add_person(const char *name, int age, struct Address address);
-void			show_person_infos(struct Person *person, int num);
-void			delete_person(int person_num);
+void			add_person();
+void			show_person_infos();
+void			delete_person();
 
 void			show_persons_table();
 
